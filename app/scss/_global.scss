@@ -1,0 +1,113 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #737373;
+    background-color: #FAFAFA;
+}
+
+a.lang-bnt{
+    display: block;
+    color: #FF7B47;
+    transition: color 0.4s;
+    &:hover{
+        color: #FAFAFA;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    &__img {
+        width: 70px;
+        height: auto;
+    }
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.4;
+    color: #252B42;
+}
+
+.btn {
+    background: #FF7B47;
+    padding: 30px;
+    color: #FAFAFA;
+    border: 1px solid #FAFAFA;
+    border-radius: 37px;
+    transition: all 0.4s;
+    &:hover,
+    &:active,
+    &:focus {
+        background: #FAFAFA;
+        color: #FF7B47;
+        border: 1px solid #FF7B47;
+    }
+}
+
+.footer{
+    padding-top: 100px;
+    background-color: #252B42;
+    color: #FAFAFA;
+    &__content{
+        padding-bottom: 100px;
+    }
+    &__title{
+        margin-bottom: 30px;
+    }
+    &__span{
+        display: block;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    &__list{
+        display: block;
+        padding-bottom: 50px;
+    }
+    &__link{
+        color: #FAFAFA;
+        transition: color 0.4s;
+        position: relative;
+        padding-left: 40px;
+        &:hover{
+            color: #FF7B47;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 30px;
+            left: 0;
+            background-repeat: no-repeat;
+        }
+        &--phone::before{
+            background-image: url(../images/icons/call-white.svg);
+        }
+        &--mail::before{
+            background-image: url(../images/icons/email-white.svg);
+        }
+    }
+    &__copy{
+        padding: 20px 0;
+        text-align: center;
+        color: #FAFAFA;
+        font-size: 16px;
+        background-color: #FF7B47;
+    }
+}
+
+.burger-btn{
+    background-color: transparent;
+    border: none;
+    width: 44px;
+    height: 44px;
+    display: none;
+}
